@@ -1,10 +1,10 @@
 html {
   width: 100%; }
   html body {
-    width: 100%; }
+    width: 100%;
+    overflow: hidden; }
     html body #box {
-      width: 400%;
-      position: absolute; }
+      width: 400%; }
     html body #box div {
       height: 600px;
       float: left;

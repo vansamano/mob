@@ -1,8 +1,8 @@
 html{
   width: 100%;
   body{
-    width: 100%;
-    #box{width: 400%;position: absolute}
+    width: 100%;overflow: hidden;
+    #box{width: 400%;}
     #box div{
       height: 600px;
       float: left;
