@@ -1,0 +1,21 @@
+html {
+  width: 100%; }
+  html body {
+    width: 100%; }
+    html body #box {
+      width: 400%;
+      position: absolute; }
+    html body #box div {
+      height: 600px;
+      float: left;
+      width: 25%; }
+      html body #box div:nth-child(1) {
+        background: blue; }
+      html body #box div:nth-child(2) {
+        background: red; }
+      html body #box div:nth-child(3) {
+        background: pink; }
+      html body #box div:nth-child(4) {
+        background: cyan; }
+
+/*# sourceMappingURL=04.css.map */

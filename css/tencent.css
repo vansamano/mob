@@ -1,0 +1,101 @@
+html {
+  width: 100%; }
+  html body {
+    width: 100%; }
+    html body .title {
+      width: 100%; }
+      html body .title img {
+        width: 100%; }
+      html body .title ul {
+        display: flex;
+        flex-flow: row;
+        overflow: auto; }
+      html body .title li {
+        flex: 1;
+        text-align: center;
+        list-style: none;
+        font-size: 0.64rem;
+        color: #666; }
+    html body .lb {
+      width: 100%;
+      margin-top: 0.2rem; }
+      html body .lb img {
+        width: 100%; }
+    html body .block div {
+      width: 100%;
+      border: 1px solid #efefef;
+      margin-top: 0.2rem; }
+      html body .block div:nth-child(1) ul {
+        padding: 0.4rem; }
+        html body .block div:nth-child(1) ul li:nth-child(1) {
+          font-size: 0.48rem; }
+          html body .block div:nth-child(1) ul li:nth-child(1) span:nth-child(1) {
+            font-size: 0.96rem; }
+          html body .block div:nth-child(1) ul li:nth-child(1) span:nth-child(2) {
+            padding: 0 10px;
+            color: white;
+            background: orange;
+            border-radius: 10px; }
+          html body .block div:nth-child(1) ul li:nth-child(1) span:nth-child(3) {
+            position: absolute;
+            right: 0.4rem;
+            margin-top: 0.5rem;
+            color: #888; }
+          html body .block div:nth-child(1) ul li:nth-child(1) span:nth-child(3) img {
+            width: 0.48rem;
+            margin-right: 0.2rem; }
+        html body .block div:nth-child(1) ul li:nth-child(2) {
+          color: #888;
+          font-size: 0.48rem; }
+          html body .block div:nth-child(1) ul li:nth-child(2) span {
+            position: absolute;
+            right: 0.4rem;
+            color: white;
+            background: #bfcace;
+            padding: 0.04rem 0.2rem;
+            border-radius: 0.4rem; }
+    html body .content {
+      margin-top: 0.4rem;
+      border-top: 1px solid #efefef; }
+      html body .content ul {
+        padding: 0.4rem;
+        border-bottom: 1px solid #efefef;
+        width: 90%;
+        margin: 0.2rem auto; }
+        html body .content ul li:nth-child(1) {
+          font-size: 0.48rem; }
+        html body .content ul li:nth-child(2) {
+          font-size: 0.4rem;
+          color: cornflowerblue;
+          margin: 0.4rem 0; }
+        html body .content ul li:nth-child(2) img {
+          width: 0.48rem;
+          vertical-align: middle;
+          margin-right: 0.4rem; }
+        html body .content ul li:nth-child(3) {
+          font-size: 0.64rem; }
+        html body .content ul li:nth-child(3) span {
+          position: absolute;
+          right: 0.4rem;
+          margin-top: -1rem; }
+        html body .content ul li:nth-child(3) {
+          width: 8.6rem;
+          border: 1px solid transparent;
+          height: auto; }
+        html body .content ul li:nth-child(3) img {
+          width: 5rem; }
+        html body .content ul li:nth-child(4) {
+          font-size: 0.32rem;
+          margin: 0.6rem 0;
+          color: #888; }
+        html body .content ul li:nth-child(5) {
+          margin: 1.6rem auto;
+          font-size: 0.32rem;
+          width: 4rem;
+          padding: 0.2rem 0.4rem;
+          border: 1px solid cornflowerblue;
+          color: cornflowerblue;
+          text-align: center;
+          border-radius: 0.8rem; }
+
+/*# sourceMappingURL=tencent.css.map */

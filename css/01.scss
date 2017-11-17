@@ -1,0 +1,22 @@
+$sc:50;
+html{
+  width: 100%;
+  height: 100%;
+}
+body{
+  margin: 0;
+  background: rgb(240,240,240);
+  img{
+    border: none;
+    &:nth-child(1){
+      width: 317/$sc+rem;
+      margin-top: 336/$sc+rem;
+      margin-left: 213/$sc+rem;
+    }
+    &:nth-child(2){
+      width: 218/$sc+rem;
+      margin-left: 263/$sc+rem;
+      margin-top: 23/$sc+rem;
+    }
+  }
+}

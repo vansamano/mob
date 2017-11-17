@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/04.css">
+    <!--<script>
+        document.documentElement.style.fontSize=innerWidth/15+"px"
+    </script>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <script src="js/index04.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="box">
+    <div>11</div>
+    <div>22</div>
+    <div>33</div>
+    <div>44</div>
+</div>
+</body>
+<script>
+    /*var box=document.getElementById('box');
+    var boxs=box.getElementsByTagName('div');
+    var w=innerWidth;
+    box.addEventListener('touchstart',function (ev) {
+        var posleft=this.offsetLeft;
+        var ex=ev.changedTouches[0].pageX;
+        box.addEventListener("touchmove",function (ev) {
+            var divs=ev.changedTouches[0].pageX-ex;
+            box.style.left=(posleft+divs)+'px';
+        });
+        box.addEventListener('touchend',function (ev) {
+            var n=Math.round(box.offsetLeft/w);
+            if(n<=-(boxs.length-1)){
+                n=-(boxs.length-1)
+            }if(n>0){n=0;}
+            box.style.left=n*w+"px";
+        })
+
+    })*/
+
+
+
+
+    /*box.addEventListener("touchstart",function (ev) {
+        ev.preventDefault();
+        this.innerHTML=ev.targetTouches.length;
+    })*/
+    /*box.addEventListener("touchstart",function (ev) {
+        ev.preventDefault();
+        this.innerHTML=ev.changedTouches.length;
+    })*/
+var n=0;
+$('#box').on("swipeLeft",function () {
+    n++;
+    if(n==$("#box div").length){
+        n=$("#box div").length-1;
+    }
+    $('#box').css("transform","translate3d(-"+n*innerWidth+"px,0,0)");
+})
+    $('#box').on("swipeRight",function () {
+        n--;
+        if(n<0){
+            n=0;
+        }
+        $("#box").css("transform","translate3d(-"+n*innerWidth+"px,0,0)")
+    })
+
+</script>
+
+
+</html>
