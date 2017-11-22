@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin: 0;padding: 0}
+        .target li{width: 20px;height: 20px;background-color: red;position: relative;left: -23px; list-style: none;border-radius: 50%};
+        /*.target{}*/
+        .wtf{width: 600px;height: 500px;background-image: url("timg.jpg") ;margin: 0 auto}
+        #lala{width: 800px;height: 304px;background-image: url("timg.jpg");background-repeat: no-repeat;background-size: 800px 324px;margin: 0 auto;overflow: hidden}
+        #btn{width: 100px;height: 50px;}
+        .btm{width: 200px;margin: 0 auto}
+        .target li img{height: 20px;width: 20px}
+        /*.arrow{width: 50px;height: 50px;}*/
+        /*#left1{position: absolute;left: 800px;margin-top: 150px}*/
+        /*#up1{position: absolute;left: 850px;margin-top: 100px}*/
+        /*#down1{position: absolute;left: 850px;margin-top: 150px}*/
+        /*#right1{position: absolute;left: 900px;margin-top: 150px}*/
+        #person{width: 20px;height: 20px;position: relative;left: 700px;bottom: 60px;overflow: hidden;border-radius: 60%}
+        #person img{position: relative;right: 155px;bottom: 31px;height: 75px;width: 190px}
+        #line{border: 1px solid white;height: 100px;width: 0;position: relative;left: 620px;bottom: 124px}
+    </style>
+</head>
+<body>
+<div id="lala">
+    <ul class="target">
+        <li style="background-color: transparent"></li>
+        <li style="background-color: transparent"></li>
+        <li style="background-color: transparent"></li>
+        <li style="background-color: transparent"></li>
+        <li style="background-color: transparent"></li>
+        <li style="background-color: transparent"></li>
+        <li style="background-color: transparent"></li>
+        <li style="background-color: transparent"></li>
+        <li style="background-color: transparent"></li>
+        <li style="background-color: transparent"></li>
+        <li style="background: white"><img src="ball/篮球%20(1).png" alt=""></li>
+        <li><img src="ball/篮球%20(2).png" alt=""></li>
+        <li><img src="ball/篮球%20(3).png" alt=""></li>
+        <li><img src="ball/篮球%20(4).png" alt=""></li>
+        <li><img src="ball/篮球%20(5).png" alt=""></li>
+    </ul>
+    <div id="person"><img src="ball/timg%20(1).jpg" alt=""></div>
+    <div id="line"></div>
+</div>
+
+<div class="btm"><button id="btn">start</button></div>
+<ol class="wtf">
+</ol>
+</body>
+<script>
+var divr=document.getElementsByTagName('li')[10];
+var divr1=document.getElementsByTagName('li')[11];
+var divr2=document.getElementsByTagName('li')[12];
+var divr3=document.getElementsByTagName('li')[13];
+var divr4=document.getElementsByTagName('li')[14];
+var begin=document.getElementsByTagName('button')[0];
+
+var person=document.getElementById('person');
+//var lf=document.getElementById('left1');
+//var rt=document.getElementById('right1');
+//var upp=document.getElementById('up1');
+//var dwn=document.getElementById('down1');
+var timer=null;
+var ll=0;
+var xx=0;
+var xx1=0;
+var xx2=0;
+var xx3=0;
+var pnl=720;
+var pnb=90;
+var val
+function jumpPage() {
+    if (event.keyCode==37)//左//
+    fun_a();
+    if (event.keyCode==39)
+        fun_b();
+    if (event.keyCode==38)
+        fun_c()
+    if (event.keyCode==40)
+        fun_d()
+}
+
+
+function fun_a(){
+    pnl= pnl-20;
+    if( pnl<620){
+        pnl=620
+    }
+    person.style.left=  pnl+"px";
+}
+
+
+
+
+function fun_b(){
+    pnl= pnl+20;
+    if( pnl>780){
+        pnl=780
+    }
+    person.style.left= pnl+"px";
+    function pb(){
+        return pnl
+    }
+    return pb;
+}
+function fun_c(){
+    pnb= pnb+20;
+    if( pnb>100){
+        pnb=100
+    }
+    person.style.bottom= pnb+"px";
+}
+function fun_d(){
+    pnb= pnb-20;
+    if( pnb<20){
+        pnb=20
+    }
+    person.style.bottom= pnb+"px";
+    function pl(){
+        return pnb
+    }
+    return pl;
+}
+
+
+
+
+begin.onclick=function () {
+    timer=setInterval(demo5,30);
+    function demo5() {
+        ll=ll+20;
+        divr.style.left=ll+ "px";
+        if(ll>800){
+            ll=0
+        }
+        function dl5() {
+            return ll
+        }
+        return dl5
+    }
+    timer=setInterval(demo4,10);
+    function demo4() {
+        xx=xx+4;
+        divr1.style.left=xx+ "px";
+        if(xx>800){
+            xx=0
+        }
+        function d14(){
+            return xx
+        }
+        return d14;
+    }
+    timer=setInterval(demo3,30);
+    function demo3() {
+        xx1=xx1+10;
+        divr2.style.left=xx1+ "px";
+        if(xx1>800){
+            xx1=0
+        }
+        function d13(){
+            return xx1
+        }
+        return d13;
+    }
+    timer=setInterval(demo2,10);
+    function demo2() {
+        xx2=xx2+5;
+        divr3.style.left=xx2+ "px";
+        if(xx2>800){
+            xx2=0
+        }
+        function d12(){
+            return xx2
+        }
+        return d12;
+    }
+    timer=setInterval(demo,10);
+    function demo() {
+        xx3=xx3+10;
+        divr4.style.left=xx3+ "px";
+        if(xx3>800){
+            xx3=0
+        }
+        function d1(){
+            return xx3
+        }
+        return d1;
+    }
+    var dl = demo()
+    var d2=demo2()
+    var d3=demo3()
+    var d4=demo4()
+    var d5=demo5()
+    var pl=fun_d()
+    var pb=fun_b()
+    setInterval(function () {
+        if(Math.round(dl())==pb()&&pl()==20){
+            alert('Game over');
+            window.location.reload()
+        }
+    },10)
+    setInterval(function () {
+        if(Math.round(d2())==pb()&&pl()==40){
+            alert('Game over');
+            window.location.reload()
+        }
+    },10)
+    setInterval(function () {
+        if(Math.round(d3())==pb()&&pl()==60){
+            alert('Game over');
+            window.location.reload()
+        }
+    },30)
+    setInterval(function () {
+        if(Math.round(d4())==pb()&&pl()==80){
+            alert('Game over');
+            window.location.reload()
+        }
+    },10)
+    setInterval(function () {
+        if(Math.round(d5())==pb()&&pl()==100){
+            alert('Game over');
+            window.location.reload()
+        }
+    },30)
+
+
+
+
+
+
+};
+document.onkeydown=jumpPage;
+
+
+</script>
+</html>
